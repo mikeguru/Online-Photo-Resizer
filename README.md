@@ -1,4 +1,6 @@
-# Photo-Resizer
+# Online Photo Resizer
+
+Wen Jiang
 
 Takes in your photo and outputs the optimized photo in PNG
 
