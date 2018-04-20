@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://photoresize.pythonanywhere.com/ -->
+<html lang="en"><!--Remove CSS
+  <head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+
+  </head>
+  --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Online Photo Resizer</h3>
+		<p>Wen Jiang</p>
+      </div>
+      <hr>
+      <div>
+	  <h4>Takes in your photo and outputs the optimized photo in PNG</h4>
+	  <p>Supported Input Photo Formats include PNG, JPG, JPEG, JPEG 2000</p>
+      <form action="https://photoresize.pythonanywhere.com/upload" method="POST" enctype="multipart/form-data"> <!--"upload" is the directory where the action takes place-->
+        <input type="file" name="file">
+		<br>
+		<br>
+
+		  <table>
+		    <tbody><tr>
+			  <td colspan="2" align="left">
+			    <input type="radio" name="resize_mode" id="defined_mode" value="defined_mode">Scale by width and height
+			  </td>
+			  <td></td>
+			  <td colspan="2" align="left">
+			    <input type="radio" name="resize_mode" id="ratio_mode" value="ratio_mode" checked="">Scale by x and y ratio
+			  </td>
+			</tr>
+		    <tr>
+			  <td align="right">Width (1-10000):</td>
+			  <td align="left"><input type="number" name="width" min="1" max="10000"></td>
+			  <td></td>
+			  <td align="right">Ratio on X (0.01-100):</td>
+			  <td align="left"><input type="number" name="fx" min="0.01" max="100" step="0.01"></td>
+			</tr>
+			<tr>
+			  <td align="right">Height (1-10000):</td>
+			  <td align="left"><input type="number" name="height" min="1" max="10000"></td>
+			  <td></td>
+			  <td align="right">Ratio on Y (0.01-100):</td>
+			  <td align="left"><input type="number" name="fy" min="0.01" max="100" step="0.01"></td>
+			</tr>
+		</tbody></table>
+
+		<br>
+		<input type="submit" value="Upload">
+
+      </form>
+      </div>
+    </div>
+  
+<div class="ginger-module-correctionBubble" style="display: none;"><div class="ginger-module-correctionBubble-container ginger-module-correctionBubble-container-loggedout"><div class="ginger-module-correctionBubble-login">Log in</div><div class="ginger-module-correctionBubble-body">to use Ginger</div></div><div class="ginger-module-correctionBubble-container ginger-module-correctionBubble-container-loggedin"><div class="ginger-module-correctionBubble-limited">Limited mode</div><div class="ginger-module-correctionBubble-body"></div><a href="javascript:" class="ginger-module-correctionBubble-close" title="Ignore mistake">×</a></div></div><div contenteditable="false" id="ginger-floatingG-container" style="position: absolute; top: 0px; left: 0px;"><div class="ginger-floatingG ginger-floatingG-closed" style="display: none;"><div class="ginger-floatingG-disabled-main"><div class="ginger-floatingG-bar-tool-tooltip">Enable Ginger</div></div><div class="ginger-floatingG-offline-main"><div class="ginger-floatingG-bar-tool-tooltip"><em>Cannot connect to Ginger</em> Check your internet connection<br> or reload the browser</div></div><div class="ginger-floatingG-enabled-main"><div class="ginger-floatingG-bar"><div class="ginger-floatingG-bar-tool ginger-floatingG-bar-tool-disable"><a></a><div class="ginger-floatingG-bar-tool-tooltip">Disable in this text field</div></div><div class="ginger-floatingG-bar-tool"><a class="ginger-floatingG-bar-tool-edit">Edit</a><div class="ginger-floatingG-bar-tool-tooltip">Edit in Ginger</div></div><div class="ginger-floatingG-bar-tool ginger-floatingG-bar-tool-mistakes"><a><span class="ginger-floatingG-bar-tool-mistakes-count"></span><svg width="14px" height="14px" viewBox="0 0 66 66" class="ginger-floatingG-loader-spinner"><circle class="ginger-floatingG-loader-spinner-path" fill="none" stroke-width="8.5" stroke-linecap="round" cx="33" cy="33" r="28"></circle></svg></a><div class="ginger-floatingG-bar-tool-tooltip">Edit in Ginger</div></div></div></div></div></div><div class="ginger-extension-writer" style="display: none;"><div class="ginger-extension-writer-frame"><iframe src="./photoresize.pythonanywhere.com_files/index.html"></iframe></div></div></body></html>
